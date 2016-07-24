@@ -1,7 +1,3 @@
 class Location < ApplicationRecord
-	after_initialize :init
-
-    def init
-      self.score = 0
-    end
+	has_many :reviews
 end

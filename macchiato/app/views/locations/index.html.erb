@@ -1,0 +1,16 @@
+<h1>All Locations</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Score</th>
+  </tr>
+ 
+  <% @locations.each do |location| %>
+    <tr>
+      <td><%= location.name %></td>
+      <td><%= link_to 'Show', location_path(location) %></td>
+      <td><%= link_to 'Add Review', new_location_review_path(location) %> </td>
+    </tr>
+  <% end %>
+</table>

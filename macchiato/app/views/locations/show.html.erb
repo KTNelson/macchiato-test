@@ -19,6 +19,8 @@
 </p>
 
 <p>
-  <strong>Current Score:</strong>
-  <%= @location.score %>
+  <strong>Number of Reviews:</strong>
+  <%= @location.reviews.size %>
 </p>
+
+<%= link_to 'Back', locations_path %>
