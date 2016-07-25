@@ -6,10 +6,22 @@ class ShopsController < ApplicationController
   	end
   end
 
-  def create
+  def new
 
   end
 
+  def create
+  	@shop = Shop.new(shop_params)
+  	@shop.save
+  	redirect_to root_path
+  end
+
   def new
+  end
+
+
+  private
+  def shop_params
+  	params.require(:shop).permit(:name, :address, :city, :result)
   end
 end

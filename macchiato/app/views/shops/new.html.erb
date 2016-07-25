@@ -1,2 +1,23 @@
-<h1>Item not found please add</h1>
+<h2>We don't have a result for that coffee place! Help us out and add it!</h2>
 
+<%= form_for :shop, url: shops_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_area :city %>
+  </p>
+  <p>
+    <%= f.label :result %><br>
+    <%= f.text_area :result %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
