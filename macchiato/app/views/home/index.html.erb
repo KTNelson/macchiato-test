@@ -1,7 +1,3 @@
 <h1>Welcome to Macchiato</h1>
 
-<%= form_tag(shop_path(:id), method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-<% end %>
+<%= render 'shared/search' %>

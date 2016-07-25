@@ -1,1 +1,11 @@
-<h1>A Shop</h1>
+<h1>Results:</h1>
+
+<h3>Name</h3>
+<%= @shop.name %>
+<h3>Address</h3>
+<%= @shop.address %>
+<%= @shop.city %>
+<h1>This coffee place...<%= @shop.result %>ed</h1>
+
+<p>Find another?</p>
+<%= render 'shared/search' %>
